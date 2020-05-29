@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue技巧 | Tenet Blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="Just learn javascript">
+    <link rel="preload" href="/assets/css/0.styles.2b949031.css" as="style"><link rel="preload" href="/assets/js/app.cfff71d5.js" as="script"><link rel="preload" href="/assets/js/2.cec2c587.js" as="script"><link rel="preload" href="/assets/js/11.52e810a7.js" as="script"><link rel="prefetch" href="/assets/js/10.0dc2eb33.js"><link rel="prefetch" href="/assets/js/3.89476edb.js"><link rel="prefetch" href="/assets/js/4.20d724d6.js"><link rel="prefetch" href="/assets/js/5.ff153f72.js"><link rel="prefetch" href="/assets/js/6.509735ba.js"><link rel="prefetch" href="/assets/js/7.d4f3f4ce.js"><link rel="prefetch" href="/assets/js/8.9dd85814.js"><link rel="prefetch" href="/assets/js/9.c31b6f2e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2b949031.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Tenet Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active">
+  前端
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="联系我" class="dropdown-title"><span class="title">联系我</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/jsnobug" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/xiao_zheng_123" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active">
+  前端
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="联系我" class="dropdown-title"><span class="title">联系我</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/jsnobug" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/xiao_zheng_123" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>vue</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/vue/" aria-current="page" class="sidebar-link">vue</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/vue/#vue1" class="sidebar-link">vue1</a></li></ul></li><li><a href="/web/vue/object.html" aria-current="page" class="active sidebar-link">vue技巧</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/vue/object.html#this-set-obj-key-value" class="sidebar-link">this.$set(obj,key,value)</a></li><li class="sidebar-sub-header"><a href="/web/vue/object.html#策略模式" class="sidebar-link">策略模式</a></li><li class="sidebar-sub-header"><a href="/web/vue/object.html#职责单一" class="sidebar-link">职责单一</a></li><li class="sidebar-sub-header"><a href="/web/vue/object.html#冻结渲染无关的数据" class="sidebar-link">冻结渲染无关的数据</a></li><li class="sidebar-sub-header"><a href="/web/vue/object.html#样式穿透" class="sidebar-link">样式穿透</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue技巧"><a href="#vue技巧" class="header-anchor">#</a> vue技巧</h1> <h2 id="this-set-obj-key-value"><a href="#this-set-obj-key-value" class="header-anchor">#</a> this.$set(obj,key,value)</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// data</span>
+<span class="token punctuation">{</span>
+    person<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 个人信息</span>
+        name<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+        age<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+        gender<span class="token operator">:</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 作为接口参数传递</span>
+<span class="token function">ajax</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>person<span class="token punctuation">)</span>
+
+<span class="token comment">// 接口获取数据，批量处理</span>
+<span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+ <span class="token keyword">const</span> <span class="token punctuation">{</span>name<span class="token punctuation">,</span> age<span class="token punctuation">,</span> gender<span class="token punctuation">}</span> <span class="token operator">=</span> res<span class="token punctuation">.</span>data
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$<span class="token keyword">set</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">'person'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>name<span class="token punctuation">,</span> age<span class="token punctuation">,</span> gender<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="策略模式"><a href="#策略模式" class="header-anchor">#</a> 策略模式</h2> <p>策略模式的使用，避免过多的if else判断，也可以替代简单逻辑的switch</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">formatDemandItemType</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">switch</span> <span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
+            <span class="token keyword">return</span> <span class="token string">'基础'</span>
+        <span class="token keyword">case</span> <span class="token number">2</span><span class="token operator">:</span>
+            <span class="token keyword">return</span> <span class="token string">'高级'</span>
+        <span class="token keyword">case</span> <span class="token number">3</span><span class="token operator">:</span>
+            <span class="token keyword">return</span> <span class="token string">'VIP'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 策略模式</span>
+<span class="token keyword">const</span> <span class="token function-variable function">formatDemandItemType2</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token number">1</span><span class="token operator">:</span> <span class="token string">'基础'</span><span class="token punctuation">,</span>
+        <span class="token number">2</span><span class="token operator">:</span> <span class="token string">'高级'</span><span class="token punctuation">,</span>
+        <span class="token number">3</span><span class="token operator">:</span> <span class="token string">'VIP'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">return</span> obj<span class="token punctuation">[</span>value<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="职责单一"><a href="#职责单一" class="header-anchor">#</a> 职责单一</h2> <p>任何时候尽量是的一个函数就做一件事情，而不是将各种逻辑全部耦合在一起，提高单个函数的复用性和可读性
+每个页面都会在加载完成时进行数据的请求并展示到页面</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 将全部的请求行为聚合在init函数中</span>
+  <span class="token comment">// 将每个请求单独拆分</span>
+  <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getList1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getList2</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">getList1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// to do ...</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">getList2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// to do ...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="冻结渲染无关的数据"><a href="#冻结渲染无关的数据" class="header-anchor">#</a> 冻结渲染无关的数据</h2> <p>vue中data的数据默认便会进行双向数据绑定，若是将大量的和渲染无关的数据直接放置在data中，将会浪费双向数据绑定时所消耗的性能，将这些和渲染无关的数据进行抽离并配合Object.freeze进行处理
+table中columns数据可以单独提取一个外部js文件作为配置文件，也可以在当前.vue文件中定义一个常量定义columns数据，因为无论如何都是固定且不会修改的数据，应该使用Object.freeze进行包裹，既可以提高性能还可以将固定的数据抽离，一些下拉框前端固定的数据也建议此操作</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> columnList <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">freeze</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> title<span class="token operator">:</span> <span class="token string">'姓名'</span><span class="token punctuation">,</span> key<span class="token operator">:</span> <span class="token string">'name'</span><span class="token punctuation">,</span> align<span class="token operator">:</span> <span class="token string">'center'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> title<span class="token operator">:</span> <span class="token string">'性别'</span><span class="token punctuation">,</span> key<span class="token operator">:</span> <span class="token string">'gender'</span><span class="token punctuation">,</span> align<span class="token operator">:</span> <span class="token string">'center'</span> <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>需要注意的是 Object.freeze() 冻结的是值，这时仍然可以将变量的引用替换掉，还有确保数据不会变才可以使用这个语法，如果要对数据进行修改和交互，就不适合使用冻结了。</p></div> <h2 id="样式穿透"><a href="#样式穿透" class="header-anchor">#</a> 样式穿透</h2> <p>在开发中修改第三方组件样式是很常见，但由于 scoped 属性的样式隔离，可能需要去除 scoped 或是另起一个 style 。这些做法都会带来副作用（组件样式污染、不够优雅），样式穿透在css预处理器中使用才生效。</p> <ul><li><p>less使用  <strong>/deep/</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">&lt;style scoped lang=&quot;less&quot;&gt;
+.content /deep/ .el-button</span> <span class="token punctuation">{</span>
+	 <span class="token property">height</span><span class="token punctuation">:</span> 60px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+&lt;/style&gt;
+</code></pre></div></li> <li><p>scss使用 <strong>::v-deep</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">&lt;style scoped lang=&quot;scss&quot;&gt;
+.content ::v-deep .el-button</span> <span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 60px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+&lt;/style&gt;
+</code></pre></div></li> <li><p>stylus使用 <strong>&gt;&gt;&gt;</strong></p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">&lt;style scoped ang=&quot;stylus&quot;&gt;
+外层 &gt;&gt;&gt; .custon-components</span><span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 60px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+&lt;/style&gt;
+</code></pre></div></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/29/2020, 4:29:20 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/web/vue/" class="prev router-link-active">
+        vue
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.cfff71d5.js" defer></script><script src="/assets/js/2.cec2c587.js" defer></script><script src="/assets/js/11.52e810a7.js" defer></script>
+  </body>
+</html>
