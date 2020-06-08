@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>布局技巧 | Tenet Blog</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="Just learn javascript">
+    <link rel="preload" href="/assets/css/0.styles.2b949031.css" as="style"><link rel="preload" href="/assets/js/app.3db52586.js" as="script"><link rel="preload" href="/assets/js/2.cec2c587.js" as="script"><link rel="preload" href="/assets/js/12.33b24db3.js" as="script"><link rel="prefetch" href="/assets/js/10.1cbacab7.js"><link rel="prefetch" href="/assets/js/11.ec40903a.js"><link rel="prefetch" href="/assets/js/13.4593f6c8.js"><link rel="prefetch" href="/assets/js/14.54b51eea.js"><link rel="prefetch" href="/assets/js/15.35ae0c61.js"><link rel="prefetch" href="/assets/js/16.9ca4668f.js"><link rel="prefetch" href="/assets/js/17.3f37766e.js"><link rel="prefetch" href="/assets/js/18.5b60a012.js"><link rel="prefetch" href="/assets/js/19.db3d9acb.js"><link rel="prefetch" href="/assets/js/20.84da7f75.js"><link rel="prefetch" href="/assets/js/21.f3d8c814.js"><link rel="prefetch" href="/assets/js/22.c65a5639.js"><link rel="prefetch" href="/assets/js/3.59ed4251.js"><link rel="prefetch" href="/assets/js/4.20d724d6.js"><link rel="prefetch" href="/assets/js/5.ff153f72.js"><link rel="prefetch" href="/assets/js/6.509735ba.js"><link rel="prefetch" href="/assets/js/7.d4f3f4ce.js"><link rel="prefetch" href="/assets/js/8.7262a15f.js"><link rel="prefetch" href="/assets/js/9.34940724.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2b949031.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Tenet Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active">
+  前端
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="联系我" class="dropdown-title"><span class="title">联系我</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/jsnobug" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/xiao_zheng_123" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/web/" class="nav-link router-link-active">
+  前端
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="联系我" class="dropdown-title"><span class="title">联系我</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/jsnobug" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/xiao_zheng_123" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>无用大棒</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>htmlAndCss</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/htmlAndCss/" aria-current="page" class="sidebar-link">目录</a></li><li><a href="/web/htmlAndCss/布局单位.html" class="sidebar-link">布局单位</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/htmlAndCss/布局单位.html#基础" class="sidebar-link">基础</a></li><li class="sidebar-sub-header"><a href="/web/htmlAndCss/布局单位.html#面向逻辑像素" class="sidebar-link">面向逻辑像素</a></li><li class="sidebar-sub-header"><a href="/web/htmlAndCss/布局单位.html#rem-flexible" class="sidebar-link">rem+flexible</a></li><li class="sidebar-sub-header"><a href="/web/htmlAndCss/布局单位.html#小程序rpx" class="sidebar-link">小程序rpx</a></li></ul></li><li><a href="/web/htmlAndCss/布局技巧.html" class="active sidebar-link">布局技巧</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/htmlAndCss/布局技巧.html#水平居中" class="sidebar-link">水平居中</a></li><li class="sidebar-sub-header"><a href="/web/htmlAndCss/布局技巧.html#垂直居中" class="sidebar-link">垂直居中</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>git</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>mockjs</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="布局技巧"><a href="#布局技巧" class="header-anchor">#</a> 布局技巧</h1> <h2 id="水平居中"><a href="#水平居中" class="header-anchor">#</a> 水平居中</h2> <h3 id="行内元素"><a href="#行内元素" class="header-anchor">#</a> 行内元素</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">dom</span> <span class="token punctuation">{</span>
+	<span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="已知宽度的块级元素"><a href="#已知宽度的块级元素" class="header-anchor">#</a> 已知宽度的块级元素</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">// 方法一
+dom</span> <span class="token punctuation">{</span>
+	<span class="token property">margin</span><span class="token punctuation">:</span> 0 auto<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code>// 方法二
+// 父级元素 <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token selector">;
+dom</span> <span class="token punctuation">{</span>
+	<span class="token property">margin-left</span><span class="token punctuation">:</span> width/2
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="未知宽度的块级元素"><a href="#未知宽度的块级元素" class="header-anchor">#</a> 未知宽度的块级元素</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">// 方法一：table标签配合margin左右auto实现水平居中。使用table标签（或直接将块级元素设值为display:table）
+dom</span> <span class="token punctuation">{</span>
+	<span class="token property">display</span><span class="token punctuation">:</span> table<span class="token punctuation">;</span>
+	<span class="token property">margin</span><span class="token punctuation">:</span> 0 atuo<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">// 方法二
+dom</span> <span class="token punctuation">{</span>
+	<span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+	<span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">// 方法三，flex布局，推荐
+dom</span> <span class="token punctuation">{</span>
+	<span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+	<span class="token property">just-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">// 方法四,绝对定位，推荐
+dom</span> <span class="token punctuation">{</span>
+	<span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+	<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span>-50%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="垂直居中"><a href="#垂直居中" class="header-anchor">#</a> 垂直居中</h2> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">// 方法一：利用line-height实现，适合文字类,已知高度
+dom</span> <span class="token punctuation">{</span>
+	<span class="token property">line-height</span><span class="token punctuation">:</span> xx<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">// 方法二,绝对定位，推荐
+dom</span> <span class="token punctuation">{</span>
+	<span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+	<span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-50%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>// 方法三，flex布局，推荐
+dom {
+	display: flex;
+	align-item: center;
+}
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code>// 方法四：table布局
+// 父级转table <span class="token property">display</span><span class="token punctuation">:</span> table<span class="token selector">;
+// 子级
+dom</span> <span class="token punctuation">{</span>
+	<span class="token property">vertical-align</span><span class="token punctuation">:</span> middle；
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/8/2020, 4:02:05 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/web/htmlAndCss/布局单位.html" class="prev">
+        布局单位
+      </a></span> <span class="next"><a href="/web/javascript/">
+        目录
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.3db52586.js" defer></script><script src="/assets/js/2.cec2c587.js" defer></script><script src="/assets/js/12.33b24db3.js" defer></script>
+  </body>
+</html>
