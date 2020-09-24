@@ -7,7 +7,7 @@
     <meta name="generator" content="VuePress 1.5.0">
     <link rel="icon" href="/favicon.ico">
     <meta name="description" content="Just learn javascript">
-    <link rel="preload" href="/assets/css/0.styles.2b949031.css" as="style"><link rel="preload" href="/assets/js/app.7685caba.js" as="script"><link rel="preload" href="/assets/js/2.cec2c587.js" as="script"><link rel="preload" href="/assets/js/27.a10c69bd.js" as="script"><link rel="prefetch" href="/assets/js/10.04c87f9f.js"><link rel="prefetch" href="/assets/js/11.924dcd67.js"><link rel="prefetch" href="/assets/js/12.fb296e6b.js"><link rel="prefetch" href="/assets/js/13.36d18cf7.js"><link rel="prefetch" href="/assets/js/14.f179182b.js"><link rel="prefetch" href="/assets/js/15.17b58b6e.js"><link rel="prefetch" href="/assets/js/16.b61066ae.js"><link rel="prefetch" href="/assets/js/17.f9fec1ef.js"><link rel="prefetch" href="/assets/js/18.4c74ad02.js"><link rel="prefetch" href="/assets/js/19.eb3c150e.js"><link rel="prefetch" href="/assets/js/20.e33c05aa.js"><link rel="prefetch" href="/assets/js/21.f5823557.js"><link rel="prefetch" href="/assets/js/22.f008401e.js"><link rel="prefetch" href="/assets/js/23.6ed52214.js"><link rel="prefetch" href="/assets/js/24.4884c569.js"><link rel="prefetch" href="/assets/js/25.f2b64d45.js"><link rel="prefetch" href="/assets/js/26.c8b42f4d.js"><link rel="prefetch" href="/assets/js/28.36b10b87.js"><link rel="prefetch" href="/assets/js/29.6648c0ba.js"><link rel="prefetch" href="/assets/js/3.2727439b.js"><link rel="prefetch" href="/assets/js/30.be88c2f6.js"><link rel="prefetch" href="/assets/js/31.e5ab8454.js"><link rel="prefetch" href="/assets/js/4.20d724d6.js"><link rel="prefetch" href="/assets/js/5.ff153f72.js"><link rel="prefetch" href="/assets/js/6.509735ba.js"><link rel="prefetch" href="/assets/js/7.80547fa8.js"><link rel="prefetch" href="/assets/js/8.83f49ab7.js"><link rel="prefetch" href="/assets/js/9.b380ddcd.js">
+    <link rel="preload" href="/assets/css/0.styles.2b949031.css" as="style"><link rel="preload" href="/assets/js/app.58e3b762.js" as="script"><link rel="preload" href="/assets/js/2.cec2c587.js" as="script"><link rel="preload" href="/assets/js/29.23b54a10.js" as="script"><link rel="prefetch" href="/assets/js/10.04c87f9f.js"><link rel="prefetch" href="/assets/js/11.f99f5a2c.js"><link rel="prefetch" href="/assets/js/12.914880ca.js"><link rel="prefetch" href="/assets/js/13.fde44894.js"><link rel="prefetch" href="/assets/js/14.e4139c65.js"><link rel="prefetch" href="/assets/js/15.3d3541f1.js"><link rel="prefetch" href="/assets/js/16.47464460.js"><link rel="prefetch" href="/assets/js/17.972c06f3.js"><link rel="prefetch" href="/assets/js/18.653b624d.js"><link rel="prefetch" href="/assets/js/19.06575c3f.js"><link rel="prefetch" href="/assets/js/20.c02eb405.js"><link rel="prefetch" href="/assets/js/21.4fcccdb1.js"><link rel="prefetch" href="/assets/js/22.c0edef12.js"><link rel="prefetch" href="/assets/js/23.f9167445.js"><link rel="prefetch" href="/assets/js/24.b400ac00.js"><link rel="prefetch" href="/assets/js/25.b667619c.js"><link rel="prefetch" href="/assets/js/26.2b96fa0b.js"><link rel="prefetch" href="/assets/js/27.998ef120.js"><link rel="prefetch" href="/assets/js/28.18bfc08f.js"><link rel="prefetch" href="/assets/js/3.64c751cb.js"><link rel="prefetch" href="/assets/js/30.da6fc283.js"><link rel="prefetch" href="/assets/js/31.60e2908f.js"><link rel="prefetch" href="/assets/js/32.bf92b989.js"><link rel="prefetch" href="/assets/js/33.c19db7c6.js"><link rel="prefetch" href="/assets/js/4.20d724d6.js"><link rel="prefetch" href="/assets/js/5.ff153f72.js"><link rel="prefetch" href="/assets/js/6.509735ba.js"><link rel="prefetch" href="/assets/js/7.80547fa8.js"><link rel="prefetch" href="/assets/js/8.0da25802.js"><link rel="prefetch" href="/assets/js/9.04d4d778.js">
     <link rel="stylesheet" href="/assets/css/0.styles.2b949031.css">
   </head>
   <body>
@@ -58,7 +58,80 @@
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><p>使用组件：</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i-button</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>large<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i-button</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i-button</span> <span class="token attr-name">disabled</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i-button</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>组件里定义的 props，都是<strong>单向数据流</strong>，也就是只能通过父级修改，组件自己不能修改 props 的值，只能修改定义在 data 里的数据，非要修改，也是通过后面介绍的自定义事件通知父级，由父级来修改或者语法糖 .sync 修改。</p></div> <h1 id="api"><a href="#api" class="header-anchor">#</a> API</h1> <h2 id="组件传值"><a href="#组件传值" class="header-anchor">#</a> 组件传值</h2> <h3 id="跨组件-eventbus"><a href="#跨组件-eventbus" class="header-anchor">#</a> 跨组件-eventbus</h3> <p>在utils里面新建eventBus.js</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>组件里定义的 props，都是<strong>单向数据流</strong>，也就是只能通过父级修改，组件自己不能修改 props 的值，只能修改定义在 data 里的数据，非要修改，也是通过后面介绍的自定义事件通知父级，由父级来修改或者语法糖 .sync 修改。</p></div> <h4 id="插槽-slot"><a href="#插槽-slot" class="header-anchor">#</a> 插槽 slot</h4> <p>1.匿名插槽 default</p> <div class="language-vue extra-class"><pre class="language-vue"><code>// 父组件
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>father</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>child</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name"><span class="token namespace">v-slot:</span>default</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>child</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>father</span><span class="token punctuation">&gt;</span></span>
+简写： #default
+
+// 子组件
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>child</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span><span class="token punctuation">&gt;</span></span>
+		默认
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>child</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>2.具名插槽(可以布局)</p> <div class="language-vue extra-class"><pre class="language-vue"><code>// 父组件
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>father</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>child</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name"><span class="token namespace">v-slot:</span>{dynamicSlotName}</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#contend</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>child</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>father</span><span class="token punctuation">&gt;</span></span>
+
+data() {
+   return {
+    dynamicSlotName:&quot;head&quot;  // 可以动态命名
+   }
+ }
+
+// 子组件
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>child</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>head<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+		默认
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>contend<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+		默认
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>child</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>3.作用域插槽（数据）</p> <div class="language-vue extra-class"><pre class="language-vue"><code>// 父组件
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>father</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>child</span><span class="token punctuation">&gt;</span></span>
+		// slotProps可以自定义名字 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name"><span class="token namespace">v-slot:</span>{dynamicSlotName}</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>slotProps<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+		// 解构 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name"><span class="token namespace">v-slot:</span>{dynamicSlotName}</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>{user, test}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+			{{slotProps.user.firstName}}
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#contend</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>child</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>father</span><span class="token punctuation">&gt;</span></span>
+
+data() {
+   return {
+    dynamicSlotName:&quot;head&quot;  // 可以动态命名
+   }
+ }
+
+// 子组件
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>child</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>head<span class="token punctuation">'</span></span> <span class="token attr-name">:user</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:test</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>user<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+		默认
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>child</span><span class="token punctuation">&gt;</span></span>
+data() {
+     return {
+         user:{
+             lastName:&quot;Zhang&quot;,
+             firstName:&quot;yue&quot;
+          },
+          test:[1,2,3,4]
+       }
+    }
+</code></pre></div><h1 id="api"><a href="#api" class="header-anchor">#</a> API</h1> <h2 id="组件传值"><a href="#组件传值" class="header-anchor">#</a> 组件传值</h2> <h3 id="跨组件-eventbus"><a href="#跨组件-eventbus" class="header-anchor">#</a> 跨组件-eventbus</h3> <p>在utils里面新建eventBus.js</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
 </code></pre></div><p>被传递的组件（监听当前实例上的自定义事件）</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">mounted</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     eventBus<span class="token punctuation">.</span><span class="token function">$on</span><span class="token punctuation">(</span><span class="token string">'updateInfo'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
@@ -69,7 +142,7 @@
 </code></pre></div><p>要传递值的组件（自定义事件触发）</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 在触发方法里面写入</span>
 
 eventBus<span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'updateInfo'</span><span class="token punctuation">,</span> val<span class="token punctuation">)</span> <span class="token comment">// val可以是任何类型</span>
-</code></pre></div><p>$on $emit，第一个参数是自定义方法名，第二个是方法和传递的值</p> <h3 id="跨组件-observable（小型场景）"><a href="#跨组件-observable（小型场景）" class="header-anchor">#</a> 跨组件-observable（小型场景）</h3> <p>Vue.observable(object) 让一个对象可响应，返回的对象可以直接用于渲染函数和计算属性内。也可以作为最小化的跨组件状态存储器。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">9/8/2020, 7:48:07 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+</code></pre></div><p>$on $emit，第一个参数是自定义方法名，第二个是方法和传递的值</p> <h3 id="跨组件-observable（小型场景）"><a href="#跨组件-observable（小型场景）" class="header-anchor">#</a> 跨组件-observable（小型场景）</h3> <p>Vue.observable(object) 让一个对象可响应，返回的对象可以直接用于渲染函数和计算属性内。也可以作为最小化的跨组件状态存储器。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">9/11/2020, 5:33:43 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
       ←
       <a href="/web/vue/技巧.html" class="prev">
         vue技巧
@@ -78,6 +151,6 @@ eventBus<span class="token punctuation">.</span><span class="token function">$em
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"><!----></div></div>
-    <script src="/assets/js/app.7685caba.js" defer></script><script src="/assets/js/2.cec2c587.js" defer></script><script src="/assets/js/27.a10c69bd.js" defer></script>
+    <script src="/assets/js/app.58e3b762.js" defer></script><script src="/assets/js/2.cec2c587.js" defer></script><script src="/assets/js/29.23b54a10.js" defer></script>
   </body>
 </html>
