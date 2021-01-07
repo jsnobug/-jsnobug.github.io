@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Browser对象 | Zfy Blog</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.709c38ce.css" as="style"><link rel="preload" href="/assets/js/app.2af8ac50.js" as="script"><link rel="preload" href="/assets/js/2.a230187c.js" as="script"><link rel="preload" href="/assets/js/13.36f32b47.js" as="script"><link rel="prefetch" href="/assets/js/10.e28cce11.js"><link rel="prefetch" href="/assets/js/11.b47e2a43.js"><link rel="prefetch" href="/assets/js/12.4632df0b.js"><link rel="prefetch" href="/assets/js/14.83002d38.js"><link rel="prefetch" href="/assets/js/15.804d21bf.js"><link rel="prefetch" href="/assets/js/16.aa150047.js"><link rel="prefetch" href="/assets/js/17.a40652f3.js"><link rel="prefetch" href="/assets/js/18.44d8a093.js"><link rel="prefetch" href="/assets/js/19.4e2ef2a2.js"><link rel="prefetch" href="/assets/js/20.e391e2b1.js"><link rel="prefetch" href="/assets/js/21.a1a407e4.js"><link rel="prefetch" href="/assets/js/22.f91046b9.js"><link rel="prefetch" href="/assets/js/23.240ad858.js"><link rel="prefetch" href="/assets/js/24.c46620fe.js"><link rel="prefetch" href="/assets/js/25.afe93e81.js"><link rel="prefetch" href="/assets/js/26.3ce76712.js"><link rel="prefetch" href="/assets/js/27.fda71e63.js"><link rel="prefetch" href="/assets/js/28.9d768cc1.js"><link rel="prefetch" href="/assets/js/3.c0a82375.js"><link rel="prefetch" href="/assets/js/4.24c3d784.js"><link rel="prefetch" href="/assets/js/5.9368cb62.js"><link rel="prefetch" href="/assets/js/6.04dd46ed.js"><link rel="prefetch" href="/assets/js/7.904b6957.js"><link rel="prefetch" href="/assets/js/8.2e2c89f5.js"><link rel="prefetch" href="/assets/js/9.a0fbe3bc.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.709c38ce.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Zfy Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  vue
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web" class="dropdown-title"><span class="title">Web</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web" class="mobile-dropdown-title"><span class="title">Web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js/" class="nav-link router-link-active">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  css
+</a></li></ul></div></div><div class="nav-item"><a href="/webComponents/" class="nav-link">
+  组件
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="常用网站" class="dropdown-title"><span class="title">常用网站</span> <span class="arrow down"></span></button> <button type="button" aria-label="常用网站" class="mobile-dropdown-title"><span class="title">常用网站</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/xiao_zheng_123" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/jsnobug" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link">
+  vue
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web" class="dropdown-title"><span class="title">Web</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web" class="mobile-dropdown-title"><span class="title">Web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js/" class="nav-link router-link-active">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  css
+</a></li></ul></div></div><div class="nav-item"><a href="/webComponents/" class="nav-link">
+  组件
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="常用网站" class="dropdown-title"><span class="title">常用网站</span> <span class="arrow down"></span></button> <button type="button" aria-label="常用网站" class="mobile-dropdown-title"><span class="title">常用网站</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/xiao_zheng_123" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/jsnobug" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>js</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/js/Array.html" class="sidebar-link">数组Api</a></li><li><a href="/js/Browser对象.html" class="active sidebar-link">Browser对象</a></li><li><a href="/js/Promise.html" class="sidebar-link">Promise</a></li><li><a href="/js/SetMap.html" class="sidebar-link">Set和map数据结构</a></li><li><a href="/js/TypeScript.html" class="sidebar-link">TypeScript</a></li><li><a href="/js/utils.html" class="sidebar-link">前端常用的方法</a></li><li><a href="/js/函数.html" class="sidebar-link">函数</a></li><li><a href="/js/控制台.html" class="sidebar-link">console用法</a></li><li><a href="/js/设计模式.html" class="sidebar-link">设计模式</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="browser对象"><a href="#browser对象" class="header-anchor">#</a> Browser对象</h1> <h2 id="_1-wondow对象"><a href="#_1-wondow对象" class="header-anchor">#</a> 1.wondow对象</h2> <h3 id="_1-1-settimeout"><a href="#_1-1-settimeout" class="header-anchor">#</a> 1.1 setTimeout</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> text <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">,</span> milliseconds<span class="token punctuation">,</span> param1<span class="token punctuation">,</span> param2<span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">)</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">,</span> milliseconds<span class="token punctuation">,</span> <span class="token operator">...</span>args<span class="token punctuation">)</span>
+<span class="token comment">// 参数一：必选，调用的code或函数；参数二：可选，毫秒 等待时间；参数三：可选，传递给执行函数的其他参数；</span>
+<span class="token comment">// 返回一个Id,通过clearTimeout取消</span>
+<span class="token function">clearTimeout</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+text <span class="token operator">=</span> <span class="token keyword">null</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 举例</span>
+<span class="token keyword">const</span> <span class="token function-variable function">delay</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> wait<span class="token punctuation">,</span> <span class="token operator">...</span>args</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span>fn<span class="token punctuation">,</span> wait<span class="token punctuation">,</span> <span class="token operator">...</span>args<span class="token punctuation">)</span>
+<span class="token function">delay</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token operator">...</span>text</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">,</span> <span class="token string">'测试'</span>， <span class="token string">'测试2'</span><span class="token punctuation">)</span>
+<span class="token comment">// ['测试', '测试2']</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/js/Array.html" class="prev">
+        数组Api
+      </a></span> <span class="next"><a href="/js/Promise.html">
+        Promise
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.2af8ac50.js" defer></script><script src="/assets/js/2.a230187c.js" defer></script><script src="/assets/js/13.36f32b47.js" defer></script>
+  </body>
+</html>
