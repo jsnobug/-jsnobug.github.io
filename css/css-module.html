@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>css模块化 | Zfy Blog</title>
+    <title>module/scoped及scss用法 | Zfy Blog</title>
     <meta name="generator" content="VuePress 1.7.1">
     <link rel="icon" href="/favicon.ico">
     <meta name="description" content="Just playing around">
     
-    <link rel="preload" href="/assets/css/0.styles.709c38ce.css" as="style"><link rel="preload" href="/assets/js/app.0f00bc60.js" as="script"><link rel="preload" href="/assets/js/2.a230187c.js" as="script"><link rel="preload" href="/assets/js/9.48d44951.js" as="script"><link rel="prefetch" href="/assets/js/10.b3c6988b.js"><link rel="prefetch" href="/assets/js/11.210f06dd.js"><link rel="prefetch" href="/assets/js/12.f97a1678.js"><link rel="prefetch" href="/assets/js/13.cb002ae9.js"><link rel="prefetch" href="/assets/js/14.a0e8cb9f.js"><link rel="prefetch" href="/assets/js/15.201608a3.js"><link rel="prefetch" href="/assets/js/16.59836607.js"><link rel="prefetch" href="/assets/js/17.125a31de.js"><link rel="prefetch" href="/assets/js/18.2df13f5c.js"><link rel="prefetch" href="/assets/js/19.fc521273.js"><link rel="prefetch" href="/assets/js/20.1afaca55.js"><link rel="prefetch" href="/assets/js/21.64d3e9be.js"><link rel="prefetch" href="/assets/js/22.398453e3.js"><link rel="prefetch" href="/assets/js/23.f7e9208e.js"><link rel="prefetch" href="/assets/js/24.33fd3067.js"><link rel="prefetch" href="/assets/js/25.daef55f7.js"><link rel="prefetch" href="/assets/js/26.0a04f093.js"><link rel="prefetch" href="/assets/js/27.0ccf7868.js"><link rel="prefetch" href="/assets/js/28.c1ffd3b0.js"><link rel="prefetch" href="/assets/js/29.c154d979.js"><link rel="prefetch" href="/assets/js/3.74c0b0a7.js"><link rel="prefetch" href="/assets/js/30.c2fb59ed.js"><link rel="prefetch" href="/assets/js/31.92c850c8.js"><link rel="prefetch" href="/assets/js/32.1ec15623.js"><link rel="prefetch" href="/assets/js/4.24c3d784.js"><link rel="prefetch" href="/assets/js/5.9368cb62.js"><link rel="prefetch" href="/assets/js/6.04dd46ed.js"><link rel="prefetch" href="/assets/js/7.904b6957.js"><link rel="prefetch" href="/assets/js/8.2e2c89f5.js">
+    <link rel="preload" href="/assets/css/0.styles.709c38ce.css" as="style"><link rel="preload" href="/assets/js/app.39c5c4be.js" as="script"><link rel="preload" href="/assets/js/2.a230187c.js" as="script"><link rel="preload" href="/assets/js/9.bbd62d9a.js" as="script"><link rel="prefetch" href="/assets/js/10.ff6ac871.js"><link rel="prefetch" href="/assets/js/11.2c323961.js"><link rel="prefetch" href="/assets/js/12.44dbfe04.js"><link rel="prefetch" href="/assets/js/13.b758bd93.js"><link rel="prefetch" href="/assets/js/14.4b256e12.js"><link rel="prefetch" href="/assets/js/15.435a04d5.js"><link rel="prefetch" href="/assets/js/16.67737e73.js"><link rel="prefetch" href="/assets/js/17.a8d16e53.js"><link rel="prefetch" href="/assets/js/18.238b463a.js"><link rel="prefetch" href="/assets/js/19.388b5901.js"><link rel="prefetch" href="/assets/js/20.42ce180e.js"><link rel="prefetch" href="/assets/js/21.c89b487f.js"><link rel="prefetch" href="/assets/js/22.398453e3.js"><link rel="prefetch" href="/assets/js/23.337c00e4.js"><link rel="prefetch" href="/assets/js/24.15d4f01a.js"><link rel="prefetch" href="/assets/js/25.2fca70c6.js"><link rel="prefetch" href="/assets/js/26.c40c6be1.js"><link rel="prefetch" href="/assets/js/27.cc38ef81.js"><link rel="prefetch" href="/assets/js/28.3597d28a.js"><link rel="prefetch" href="/assets/js/29.c154d979.js"><link rel="prefetch" href="/assets/js/3.74c0b0a7.js"><link rel="prefetch" href="/assets/js/30.18870694.js"><link rel="prefetch" href="/assets/js/31.aea7b6bb.js"><link rel="prefetch" href="/assets/js/32.1ec15623.js"><link rel="prefetch" href="/assets/js/4.24c3d784.js"><link rel="prefetch" href="/assets/js/5.9368cb62.js"><link rel="prefetch" href="/assets/js/6.04dd46ed.js"><link rel="prefetch" href="/assets/js/7.490607c6.js"><link rel="prefetch" href="/assets/js/8.2e2c89f5.js">
     <link rel="stylesheet" href="/assets/css/0.styles.709c38ce.css">
   </head>
   <body>
@@ -40,12 +40,118 @@
   gitee
   <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/jsnobug" target="_blank" rel="noopener noreferrer" class="nav-link external">
   github
-  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>css</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/css/css-module.html" aria-current="page" class="active sidebar-link">css模块化</a></li><li><a href="/css/布局单位.html" class="sidebar-link">布局单位</a></li><li><a href="/css/布局技巧.html" class="sidebar-link">布局技巧</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="css模块化"><a href="#css模块化" class="header-anchor">#</a> css模块化</h1> <div class="language- extra-class"><pre class="language-text"><code>
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>css</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/css/css-module.html" aria-current="page" class="active sidebar-link">module/scoped及scss用法</a></li><li><a href="/css/布局单位.html" class="sidebar-link">布局单位</a></li><li><a href="/css/布局技巧.html" class="sidebar-link">布局技巧</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="module-scoped及scss用法"><a href="#module-scoped及scss用法" class="header-anchor">#</a> module/scoped及scss用法</h1> <h2 id="module-scoped"><a href="#module-scoped" class="header-anchor">#</a> module/scoped</h2> <p>css特点：全局的。导致命名互相影响覆盖</p> <p>vue中提出module和scoped解决方案。</p> <h3 id="scoped"><a href="#scoped" class="header-anchor">#</a> Scoped</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">&lt;style lang=&quot;scss&quot; scoped&gt;
+.content</span> <span class="token punctuation">{</span>
+  <span class="token selector">.title-wrap</span> <span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+&lt;/style&gt;
+</code></pre></div><p>scoped作用的阻止上层的css样式传递到下层，限制当前css作用域，使其只对当前组件生效。</p> <p>原理：scoped的实现是借助了PostCSS实现的，一旦增加了scoped，他会将之前覆盖的样式转换成下面的样式</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">&lt;style lang=&quot;scss&quot;&gt;
+.content[data-v-67e6b31f]</span> <span class="token punctuation">{</span>
+  <span class="token selector">.title-wrap[data-v-67e6b31f]</span> <span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+&lt;/style&gt;
+</code></pre></div><p>深度作用：</p> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">&lt;style scoped&gt;
+.content &gt;&gt;&gt; .title-wrap</span> <span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">&lt;/style&gt;
+// scss 用 /deep/
+&lt;style lang=&quot;scss&quot; scoped&gt;
+.content</span> <span class="token punctuation">{</span>
+  <span class="token selector">/deep/</span> <span class="token punctuation">{</span>
+    <span class="token selector">.title-wrap</span> <span class="token punctuation">{</span>
+      <span class="token property">font-size</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+      <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+&lt;/style&gt;
+</code></pre></div><h3 id="module"><a href="#module" class="header-anchor">#</a> Module</h3> <p>直接让类名变为哈希值,加了:global就变成全局，不会转变</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>$style.content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>$style[<span class="token punctuation">'</span>title-wrap<span class="token punctuation">'</span>]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>我是红色的<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>green-title</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>text<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>green-title</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+ 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>scss<span class="token punctuation">&quot;</span></span> <span class="token attr-name">module</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+<span class="token selector">.content</span> <span class="token punctuation">{</span>
+  <span class="token selector">.title-wrap</span> <span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token selector">;
+      :global .text</span> <span class="token punctuation">{</span>
+          <span class="token property">color</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="scss"><a href="#scss" class="header-anchor">#</a> scss</h2> <h3 id="变量"><a href="#变量" class="header-anchor">#</a> 变量</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector"><span class="token variable">$yellow</span>: yellow
+.text </span><span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$yellow</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="嵌套及缩写"><a href="#嵌套及缩写" class="header-anchor">#</a> 嵌套及缩写</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.text </span><span class="token punctuation">{</span>
+	<span class="token selector">.text2 </span><span class="token punctuation">{</span>
+		<span class="token property">color</span><span class="token punctuation">:</span> bule<span class="token punctuation">;</span>
+		<span class="token selector"><span class="token parent important">&amp;</span>:hover </span><span class="token punctuation">{</span>
+			<span class="token comment">// 类似.text:hover</span>
+			<span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="混入"><a href="#混入" class="header-anchor">#</a> 混入</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@mixin</span> poaLayout <span class="token punctuation">(</span><span class="token property"><span class="token variable">$top</span></span><span class="token punctuation">:</span> 0<span class="token punctuation">,</span> <span class="token property"><span class="token variable">$right</span></span><span class="token punctuation">:</span> 0<span class="token punctuation">,</span> <span class="token property"><span class="token variable">$transformX</span></span><span class="token punctuation">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span> <span class="token property"><span class="token variable">$transformY</span></span><span class="token punctuation">:</span> <span class="token null keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> <span class="token variable">$top</span><span class="token punctuation">;</span>
+  <span class="token property">right</span><span class="token punctuation">:</span> <span class="token variable">$right</span><span class="token punctuation">;</span>
+  <span class="token keyword">@if</span><span class="token punctuation">(</span><span class="token variable">$transformX</span> !=<span class="token null keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateX</span><span class="token punctuation">(</span><span class="token variable">$transformX</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">@if</span><span class="token punctuation">(</span><span class="token variable">$transformY</span> !=<span class="token null keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span><span class="token variable">$transformY</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 使用</span>
+<span class="token selector">.content </span><span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> 400<span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> 36px<span class="token punctuation">;</span>
+    <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+    <span class="token keyword">@include</span> <span class="token function">frontFlex</span><span class="token punctuation">(</span><span class="token property"><span class="token variable">$just</span></span><span class="token punctuation">:</span> space-between<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="导入"><a href="#导入" class="header-anchor">#</a> 导入</h3> <div class="language-scss extra-class"><pre class="language-scss"><code>&lt;style lang=<span class="token string">&quot;scss&quot;</span> module&gt;
+  <span class="token keyword">@import</span> <span class="token string">&quot;../front-style/front-common&quot;</span><span class="token punctuation">;</span>
+&lt;/style&gt;
+</code></pre></div><h3 id="操作符"><a href="#操作符" class="header-anchor">#</a> %操作符</h3> <p>%与.功能类似，但是不会输出代码</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token atrule"><span class="token rule">@media</span> screen</span> <span class="token punctuation">{</span>
+  <span class="token selector"><span class="token placeholder">%icon</span> </span><span class="token punctuation">{</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> background-color ease .2s<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0 .5em<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.error-icon </span><span class="token punctuation">{</span>
+  <span class="token keyword">@extend</span> <span class="token placeholder selector">%icon</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.info-icon </span><span class="token punctuation">{</span>
+  <span class="token keyword">@extend</span> <span class="token placeholder selector">%icon</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 最终输出</span>
+<span class="token atrule"><span class="token rule">@media</span> screen</span> <span class="token punctuation">{</span>
+  <span class="token selector">.error-icon, .info-icon </span><span class="token punctuation">{</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> background-color ease .2s<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0 .5em<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/css/布局单位.html">
         布局单位
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"><!----></div></div>
-    <script src="/assets/js/app.0f00bc60.js" defer></script><script src="/assets/js/2.a230187c.js" defer></script><script src="/assets/js/9.48d44951.js" defer></script>
+    <script src="/assets/js/app.39c5c4be.js" defer></script><script src="/assets/js/2.a230187c.js" defer></script><script src="/assets/js/9.bbd62d9a.js" defer></script>
   </body>
 </html>
